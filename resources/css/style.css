@@ -1,8 +1,33 @@
-
-
-#main-navbar {
-    background: #373B44;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    background-color: #fafafa;
+    font-size: 1rem;
+    font-family: 'Open Sans', 'Lato', sans-serif !important;
+}
+
+/*MAIN NAVBAR*/
+
+#navbar-top .navbar-nav li > a {
+    text-transform: capitalize;
+    transition: background-color .2s, color .2s;
+}
+
+#navbar-top .navbar-nav li.active > a {
+    color: #7f8c8d !important;
+}
+
+#navbar-top .navbar-nav li > a:hover {
+    color: #7f8c8d !important;
+}
+
+/*HEADER IMG*/
+.header-img {
+    
+}
+
+/*https://cdn-blob-prd.azureedge.net/prd-pws/images/default-source/default-album/high-school-students.jpg?sfvrsn=9498bf7c_2*/
