@@ -10,8 +10,13 @@ html, body {
     font-family: 'Open Sans', 'Lato', sans-serif !important;
 }
 
-/*MAIN NAVBAR*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato';
+    font-weight: 400;
+    text-transform: uppercase;
+}
 
+/*MAIN NAVBAR*/
 #navbar-top .navbar-nav li > a {
     text-transform: capitalize;
     transition: background-color .2s, color .2s;
@@ -27,7 +32,14 @@ html, body {
 
 /*HEADER IMG*/
 .header-img {
-    
+  background-image: linear-gradient(rgba(27, 20, 20, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://cdn-blob-prd.azureedge.net/prd-pws/images/default-source/default-album/high-school-students.jpg?sfvrsn=9498bf7c_2*);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 500px;
 }
 
-/*https://cdn-blob-prd.azureedge.net/prd-pws/images/default-source/default-album/high-school-students.jpg?sfvrsn=9498bf7c_2*/
+#sub-header-title {
+    text-shadow: 0px 0px 6px rgba(150, 150, 150, 0.4);
+}
