@@ -1,79 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <title>Blog Tutorial</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="resources/css/style.css">
-  <title>Blog Tutorial</title>
-</head>
+  <body>
+    <header class="main-header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white shadow-sm"
+        id="main-navbar"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="fas fa-terminal"></i></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-top"
+            aria-controls="navbar-top"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-
-  <header class="main-header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" id="main-navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#"><i class="fas fa-terminal"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-top"
-          aria-controls="navbar-top" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbar-top">
-          <ul class="navbar-nav ml-auto">
-            <li class="ml-2 mr-2 nav-item active">
-              <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="ml-2 mr-2 nav-item">
-              <a class="nav-link text-dark" href="#">Blog</a>
-            </li>
-            <li class="ml-2 mr-2 nav-item dropdown">
-              <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Categories
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">React JS</a>
-                <a class="dropdown-item" href="#">Angular JS</a>
-                <a class="dropdown-item" href="#">Node JS</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Firebase</a>
-              </div>
-            </li>
-            <li class="ml-2 mr-2 nav-item">
-              <a class="nav-link text-dark" href="#">Contact</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0 ml-2 mr-2 ">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-dark my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Search</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <div class="header-img">
-        <div class="w-100 h-100 d-flex flex-row justify-content-center align-items-center">
-          <div class="container">
-            <h1 class="text-white text-center">Software Development</h1>
-          <h2 class="text-warning text-capitalize text-center mt-3" id="sub-header-title">
-            <small>The best software tutorials ever</small>
-          </h2>
+          <div class="collapse navbar-collapse" id="navbar-top">
+            <ul class="navbar-nav ml-auto">
+              <li class="ml-2 mr-2 nav-item active">
+                <a class="nav-link text-dark" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="ml-2 mr-2 nav-item">
+                <a class="nav-link text-dark" href="#">Blog</a>
+              </li>
+              <li class="ml-2 mr-2 nav-item dropdown">
+                <a
+                  class="nav-link text-dark dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">React JS</a>
+                  <a class="dropdown-item" href="#">Angular JS</a>
+                  <a class="dropdown-item" href="#">Node JS</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Firebase</a>
+                </div>
+              </li>
+              <li class="ml-2 mr-2 nav-item">
+                <a class="nav-link text-dark" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ml-2 mr-2 ">
+              <input
+                class="form-control mr-sm-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-dark my-2 my-sm-0" type="submit">
+                <i class="fas fa-search"></i> Search
+              </button>
+            </form>
           </div>
         </div>
-        
+      </nav>
+      <div class="header-img">
+        <div
+          class="w-100 h-100 d-flex flex-row justify-content-center align-items-center"
+        >
+          <div class="container">
+            <h1 class="text-white text-center">Software Development</h1>
+            <h2
+              class="text-warning text-capitalize text-center mt-3"
+              id="sub-header-title"
+            >
+              <small>The best software tutorials ever</small>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="mail-wrapper">
+      <div class="container">
+        <div class="row mt-5 pb-5 bg-white text-center shadow-sm">
+          <h2 class="text-info mt-5 col-12">Our Tutorials</h2>
+          <div class="col-sm-12 col-lg-4 mt-4">
+            <i class="fab fa-angular fa-7x text-danger"></i>
+            <p class="mt-2 text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              quaerat nesciunt et doloribus repellat dolores incidunt,
+              exercitationem atque qui odio laudantium ex eaque explicabo
+              officia architecto voluptatum fuga. Error, officia?
+            </p>
+            <a href="#" class="text-info">View More</a>
+          </div>
+          <div class="col-sm-12 col-lg-4 mt-4">
+            <i class="fab fa-react fa-7x text-primary"></i>
+            <p class="mt-2 text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              quaerat nesciunt et doloribus repellat dolores incidunt,
+              exercitationem atque qui odio laudantium ex eaque explicabo
+              officia architecto voluptatum fuga. Error, officia?
+            </p>
+            <a href="#" class="text-info">View More</a>
+          </div>
+          <div class="col-sm-12 col-lg-4 mt-4">
+            <i class="fab fa-node-js fa-7x text-success"></i>
+            <p class="mt-2 text-secondary">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+              quaerat nesciunt et doloribus repellat dolores incidunt,
+              exercitationem atque qui odio laudantium ex eaque explicabo
+              officia architecto voluptatum fuga. Error, officia?
+            </p>
+            <a href="#" class="text-info">View More</a>
+          </div>
+        </div>
+
+        <div class="row mt-5 bg-transparent p-4 shadow-sm" id="section-users-index">
+          <div class="col-sm-12 col-lg-4 my-auto">
+            <h4 class="text-info font-weight-bold text-capitalize">
+              We have a beautiful and great team working together
+            </h4>
+            <p class="text-white mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+              culpa iste ea id maiores fugiat quasi. Totam, minima rerum! Ut
+              nihil sapiente earum laborum? Totam veritatis obcaecati saepe iure
+              delectus.
+            </p>
+          </div>
+          <div class="col-sm-12 col-lg-8">
+            <div class="row text-center ">
+              <div class="col-sm-12 col-lg-4 mt-3">
+                <img
+                  src="https://randomuser.me/api/portraits/women/70.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h5 class="text-white text-capitalize mt-2">
+                  Leslie Fields
+                </h5>
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto aperiam illum ratione velit nemo recusandae magni
+                  possimus, cumque fugit est magnam temporibus.
+                </p>
+              </div>
+              <div class="col-sm-12 col-lg-4 mt-3">
+                <img
+                  src="https://randomuser.me/api/portraits/men/9.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h5 class="text-white text-capitalize mt-2">
+                  Mike Hawkins
+                </h5>
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto aperiam illum ratione velit nemo recusandae magni
+                  possimus, cumque fugit est magnam temporibus.
+                </p>
+              </div>
+              <div class="col-sm-12 col-lg-4 mt-3">
+                <img
+                  src="https://randomuser.me/api/portraits/women/19.jpg"
+                  alt=""
+                  class="img-fluid rounded-circle"
+                />
+                <h5 class="text-white text-capitalize mt-2">
+                  Renee Graham
+                </h5>
+                <p class="text-white">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Architecto aperiam illum ratione velit nemo recusandae magni
+                  possimus, cumque fugit est magnam temporibus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <div class="row text-center bg-white pb-5 shadow-sm">
+            <h2 class="text-info mt-5 col-12">Learn Most Popular Programming Languages</h2>
+          <div class="col-sm-4 col-lg-2 mt-3">
+              <img src="resources/img/icons8-java.svg" alt="" width="120" class="img-fluid">
+          </div>
+          <div class="col-sm-4 col-lg-2 mt-3">
+              <img src="resources/img/icons8-javascript.svg" alt="" width="120" class="img-fluid">
+          </div>
+          <div class="col-sm-4 col-lg-2 mt-3">
+              <img src="resources/img/icons8-python.svg" alt="" width="120" class="img-fluid">
+          </div>
+          <div class="col-sm-4 col-lg-2 mt-3">
+              <img src="resources/img/icons8-c-sharp-logo-2.svg" alt="" width="120" class="img-fluid">
+          </div>
+          <div class="col-sm-4 col-lg-2 mt-3">
+              <img src="resources/img/icons8-ruby-programming-language.svg" alt="" width="120" class="img-fluid">
+          </div>
+          <div class="col-sm-4 col-lg-2 mt-3">
+              <img src="resources/img/icons8-php-logo.svg" alt="" width="120" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="row mt-5 p-4 text-center shadow-sm" id="section-technology">
+            <h2 class="text-white text-capitalize col-12 mt-5 mb-5">Get Ready With The New Technologies!</h2>
+          <div class="col-sm-12 col-lg-6">
+            <img src="resources/img/laptop.png" alt="" class="img-fluid">
+          </div>
+          <div class="col-sm-12 col-lg-6">
+              <img src="resources/img/devices.png" alt="" class="img-fluid">
+            </div>
+        </div>
+      </div>
     </div>
-    <!--<img src="https://cdn-blob-prd.azureedge.net/prd-pws/images/default-source/default-album/high-school-students.jpg?sfvrsn=9498bf7c_2" class="w-100 img-fluid" alt="">-->
-  </header>
 
-  <script src="vendors/js/jquery.js"></script>
-  <script src="vendors/js/popper.js"></script>
-  <script src="vendors/js/bootstrap.min.js"></script>
-  <script src="resources/js/app.js"></script>
-</body>
-
+    <script src="vendors/js/jquery.js"></script>
+    <script src="vendors/js/popper.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
 </html>

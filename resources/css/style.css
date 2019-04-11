@@ -1,38 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body {
-    background-color: #fafafa;
-    font-size: 1rem;
-    font-family: 'Open Sans', 'Lato', sans-serif !important;
+html,
+body {
+  background-color: #fafafa;
+  font-size: 1rem;
+  font-family: "Open Sans", "Lato", sans-serif !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato';
-    font-weight: 400;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato";
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 /*MAIN NAVBAR*/
 #navbar-top .navbar-nav li > a {
-    text-transform: capitalize;
-    transition: background-color .2s, color .2s;
+  text-transform: capitalize;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 #navbar-top .navbar-nav li.active > a {
-    color: #7f8c8d !important;
+  color: #7f8c8d !important;
 }
 
 #navbar-top .navbar-nav li > a:hover {
-    color: #7f8c8d !important;
+  color: #7f8c8d !important;
 }
 
 /*HEADER IMG*/
 .header-img {
-  background-image: linear-gradient(rgba(27, 20, 20, 0.7), rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(to right, rgba(11, 72, 107, 0.7), rgba(245, 98, 23, 0.7)),
     url(https://cdn-blob-prd.azureedge.net/prd-pws/images/default-source/default-album/high-school-students.jpg?sfvrsn=9498bf7c_2*);
   background-size: cover;
   background-position: top center;
@@ -41,5 +47,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #sub-header-title {
-    text-shadow: 0px 0px 6px rgba(150, 150, 150, 0.4);
+  text-shadow: 0px 0px 6px rgba(150, 150, 150, 0.4);
+}
+
+/*SECTION USERS INDEX*/
+#section-users-index {
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-top-left-radius: 25px;
+}
+
+/*SECTION TECHNOLOGY*/
+#section-technology {
+    background: #3a7bd5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+#section-technology img {
+    opacity: 0.7;
 }
